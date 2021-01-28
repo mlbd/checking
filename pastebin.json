@@ -1,0 +1,257 @@
+[28-Jan-2021 13:27:55 UTC] ContentWorkflow\Model\Api_Response Object
+(
+    [data] => stdClass Object
+        (
+            [id] => daadb245-3c4c-4dd0-a169-57526cc90b3e
+            [assigneeId] => 26c11d79-ff66-433a-a0bd-5e26d500f46a
+            [instanceId] => 8e879888-78da-4657-bdeb-6b5d3d0bbfb9
+            [content] => stdClass Object
+                (
+                    [id] => c163feff-fd61-40e5-adb7-8e2f8dd75c1b
+                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                    [updatedBy] => a21cce7d-a092-42b6-8a95-ae8bf715d880
+                    [createdDate] => 2021-01-28T13:13:49.392Z
+                    [updatedDate] => 2021-01-28T13:27:23.928Z
+                    [version] => 1
+                    [externalId] => 613
+                    [url] => http://localhost/ravi/my-feed/
+                    [status] => pending
+                    [entityType] => stdClass Object
+                        (
+                            [id] => 4faa10b4-3591-4405-bd59-8cb4dcb55f5e
+                            [type] => post
+                            [name] => Posts
+                        )
+
+                )
+
+            [workflow] => stdClass Object
+                (
+                    [id] => 3702434c-f847-4ea6-ac42-e9701eccbdf1
+                    [name] => SAO Flow
+                )
+
+            [snapshot] => stdClass Object
+                (
+                    [id] => f49d7285-443f-4aee-8b3e-27e890559357
+                )
+
+            [assignedStep] => stdClass Object
+                (
+                    [id] => 707a9b94-2b37-4e51-bc24-a67f04fd2573
+                    [name] => Review Content
+                    [stepType] => review
+                    [position] => stdClass Object
+                        (
+                            [xPos] => 314px
+                            [yPos] => 195px
+                        )
+
+                    [contentStatus] => pending
+                    [reviewDecisionType] => ALL
+                    [assignees] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => dc650221-5e38-4776-82fa-3f0ed3d28744
+                                    [type] => ROLE
+                                    [value] => 9623c2b0-c3bb-416a-85aa-7d00b1454c39
+                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [createdDate] => 2021-01-25T10:34:01.572Z
+                                    [updatedDate] => 2021-01-28T07:08:18.954Z
+                                    [version] => 11
+                                    [step] => stdClass Object
+                                        (
+                                            [id] => 707a9b94-2b37-4e51-bc24-a67f04fd2573
+                                            [name] => Review Content
+                                            [version] => 11
+                                            [stepType] => review
+                                        )
+
+                                )
+
+                        )
+
+                    [stepConnections] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => 59b75844-0a86-4d42-abb0-e60a75cbd778
+                                    [enrichmentAction] => stdClass Object
+                                        (
+                                            [id] => e1a19043-1400-449e-a2c7-69c1de37cd25
+                                            [type] => sendBack
+                                            [name] => Send Back
+                                        )
+
+                                    [actionDisplayName] => Send Back
+                                    [sourceStep] => stdClass Object
+                                        (
+                                            [id] => 707a9b94-2b37-4e51-bc24-a67f04fd2573
+                                            [name] => Review Content
+                                            [version] => 11
+                                            [stepType] => review
+                                        )
+
+                                    [targetStep] => stdClass Object
+                                        (
+                                            [id] => 3b62852f-7080-4176-9eab-5a2b4bd5c8d0
+                                            [name] => Create Content
+                                            [version] => 11
+                                            [stepType] => action
+                                        )
+
+                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [createdDate] => 2021-01-25T10:34:01.756Z
+                                    [updatedDate] => 2021-01-28T07:08:18.954Z
+                                    [version] => 11
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 8f26ea14-7aff-4753-bf0b-0de83c1d6aaa
+                                    [enrichmentAction] => stdClass Object
+                                        (
+                                            [id] => ac600296-de13-447e-b278-349e3ffd2428
+                                            [type] => approve
+                                            [name] => Approve
+                                        )
+
+                                    [actionDisplayName] => Approve and Publish
+                                    [sourceStep] => stdClass Object
+                                        (
+                                            [id] => 707a9b94-2b37-4e51-bc24-a67f04fd2573
+                                            [name] => Review Content
+                                            [version] => 11
+                                            [stepType] => review
+                                        )
+
+                                    [targetStep] => stdClass Object
+                                        (
+                                            [id] => 00d95eae-040a-4326-aa59-540a48ac9ab6
+                                            [name] => End Step
+                                            [version] => 11
+                                            [stepType] => end
+                                        )
+
+                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [createdDate] => 2021-01-25T10:34:01.733Z
+                                    [updatedDate] => 2021-01-28T07:08:18.954Z
+                                    [version] => 11
+                                )
+
+                        )
+
+                    [mailTemplates] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [id] => ca8a7181-3e3e-40f0-bf56-227c06852560
+                                    [type] => ASSIGNMENT
+                                    [subject] => You have a review to complete.
+                                    [content] => <p>Hello [first_name],</p><p>This is to notify that you have a review task related to content - [content_link]<p>Additional Comments:</p><p>[user_comments]</p></p><p>Please log in to [site_name] to review the content.</p><p>**PLEASE DO NOT RESPOND TO THIS MESSAGE**</p>
+                                    [mailRecipients] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [id] => f4db96b3-1ece-49c7-905b-12322fe5d3b4
+                                                    [category] => TO
+                                                    [type] => ROLE
+                                                    [value] => 9623c2b0-c3bb-416a-85aa-7d00b1454c39
+                                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                                    [createdDate] => 2021-01-25T10:34:01.572Z
+                                                    [updatedDate] => 2021-01-28T07:08:18.955Z
+                                                    [version] => 11
+                                                )
+
+                                        )
+
+                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [createdDate] => 2021-01-25T10:34:01.572Z
+                                    [updatedDate] => 2021-01-28T07:08:18.954Z
+                                    [version] => 11
+                                    [active] => 1
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [id] => 20fffe79-2541-4964-b31d-6753354967d8
+                                    [type] => REMINDER
+                                    [subject] => Your review assignment is due.
+                                    [content] => <p>Hello [first_name],</p><p>This is to notify that you have an open review task related to content - [content_link]<p>Additional Comments:</p><p>[user_comments]</p></p><p>Please log in to [site_name] to review the content.</p><p>**PLEASE DO NOT RESPOND TO THIS MESSAGE**</p>
+                                    [mailRecipients] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [id] => d35110ed-724f-42e2-90f5-e8d330f8f113
+                                                    [category] => TO
+                                                    [type] => ROLE
+                                                    [value] => 9623c2b0-c3bb-416a-85aa-7d00b1454c39
+                                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                                    [createdDate] => 2021-01-25T10:34:01.572Z
+                                                    [updatedDate] => 2021-01-28T07:08:18.955Z
+                                                    [version] => 11
+                                                )
+
+                                        )
+
+                                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                                    [createdDate] => 2021-01-25T10:34:01.572Z
+                                    [updatedDate] => 2021-01-28T07:08:18.955Z
+                                    [version] => 11
+                                    [active] => 1
+                                )
+
+                        )
+
+                    [createdBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                    [updatedBy] => d0c44582-cfb5-47ee-bb43-c801e0f67898
+                    [createdDate] => 2021-01-25T10:34:01.568Z
+                    [updatedDate] => 2021-01-28T07:08:18.954Z
+                    [version] => 11
+                )
+
+            [priority] => NORMAL
+            [status] => ASSIGNED
+            [taskComments] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [id] => b3bcefaf-61f8-481b-89dd-a9c991cd0d07
+                            [createdBy] => a21cce7d-a092-42b6-8a95-ae8bf715d880
+                            [updatedBy] => a21cce7d-a092-42b6-8a95-ae8bf715d880
+                            [createdDate] => 2021-01-28T13:27:23.927Z
+                            [updatedDate] => 2021-01-28T13:27:23.927Z
+                            [version] => 0
+                        )
+
+                )
+
+            [applicableActions] => stdClass Object
+                (
+                    [optional] => Array
+                        (
+                            [0] => abort
+                            [1] => reassign
+                        )
+
+                    [primary] => Array
+                        (
+                            [0] => signOff
+                        )
+
+                )
+
+            [version] => 0
+        )
+
+    [error] => 
+)
+
